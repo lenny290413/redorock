@@ -1,0 +1,146 @@
+.subtitulo{
+    font-family: 'Josefin Slab', serif;
+    font-weight: bolder;  
+    margin: 20px 0;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #C6232D;
+    width: 50%;
+}  
+.info_nosotros{
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 20px;
+font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin: 50px 0;
+}
+.destinos{
+    display: flex;
+    flex-wrap: wrap;
+}
+.destinos_items{
+    width: 20%;
+    flex: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin:10px;
+    margin-left: 0;
+    position: relative;
+    overflow: hidden;
+    img{
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    h2{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+        font-family: 'Josefin Slab', serif;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        font-size: 16px
+    }
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        padding: 5px;width: 100%;
+    }
+} 
+.promocion{ 
+    position: absolute;
+    height: 20px;
+    padding: 15px 0;
+    background: #C6232D;
+    color: white;
+    text-align: center;
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Slab', serif;
+    top: 30px;  
+    left: -50px;
+    transform: rotate(-40deg);
+
+}
+.resort{
+    width: 100%;
+    text-align: center;
+    display: block;
+    font-size: 40px;
+    margin-top: 20px;
+}
+.mod{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+li{
+    list-style: disc;
+}
+
+
+footer{
+    background: #22282C;
+    padding: 20px;
+    border-top: 5PX SOLID black;
+    .medio{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer_items{
+    h3,li{
+        color: white;
+    }
+    li{
+        list-style: circle;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        padding: 5px;
+    }
+    h3{
+        font-family: 'Josefin Slab', serif;
+        border-bottom: 1px solid white;
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width:1100px){
+    .destinos_items{
+        width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    .destinos_items{
+        width: 45%;
+    }
+    .medio{
+        width: 98%; 
+    }
+    .info_nosotros{
+        line-height: 25px;
+        text-align: left ;
+        margin: 0;
+    }
+    footer{
+        margin-top: 20px;
+        .medio{
+            flex-direction: column;
+        }
+    }
+    .secound{
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width:500px){
+    .destinos_items{
+        width: 100%;
+    }
+    
+}

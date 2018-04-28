@@ -1,0 +1,101 @@
+.slider {
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  margin-top: 80px;
+  position: relative; }
+  .slider img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: top;
+    object-position: top; }
+
+.info_slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+  width: 90%;
+  max-width: 1344px;
+  height: 100%;
+  z-index: 1; }
+  .info_slider h2 {
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 50px;
+    width: 40%;
+    padding: 20px;
+    color: white;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid white;
+    text-align: center; }
+
+.slider_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-top: 10px; }
+
+.slider_items_item {
+  width: 40%;
+  -webkit-box-flex: 1;
+  -ms-flex: auto;
+  flex: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 10px 10px; }
+  .slider_items_item i {
+    margin-bottom: 10px;
+    color: white;
+    font-size: 30px; }
+  .slider_items_item h3 {
+    text-align: center;
+    color: white;
+    font-family: 'Josefin Slab', serif;
+    font-size: 18px; }
+
+@media screen and (max-width: 800px) {
+  .slider::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4); }
+  .info_slider {
+    width: 80%; }
+  .info_slider h2 {
+    width: 100%; }
+  .slider_items {
+    width: 100%; } }
